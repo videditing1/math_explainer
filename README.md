@@ -11,7 +11,7 @@ It's built on a teardown of two of the most successful math videos on YouTube:
 ## Setup (macOS, once)
 ```bash
 ./setup.sh              # ffmpeg, cairo/pango, Python 3.12 env, the `explainer` command
-./setup.sh --latex      # optional: LaTeX for real maths typesetting (~5 GB)
+./setup.sh --latex      # optional: LaTeX for real maths typesetting (BasicTeX, ~400 MB)
 # then paste your keys into .env (AI33_API_KEY, EPIDEMIC_SOUND_MCP_API_KEY)
 source .venv/bin/activate
 explainer doctor        # checks tools, keys, credits

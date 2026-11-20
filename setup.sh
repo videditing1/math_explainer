@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # One-time setup on macOS. Safe to re-run.
 #   ./setup.sh            core tools + Python env + `explainer` command
-#   ./setup.sh --latex    also install LaTeX (~5 GB, asks for your password)
+#   ./setup.sh --latex    also install LaTeX (BasicTeX ~400 MB, asks for your password)
 set -euo pipefail
 cd "$(dirname "$0")"
 
@@ -16,8 +16,13 @@ uv pip install --python .venv -e . >/dev/null
 .venv/bin/python -W ignore -m compileall -q .venv/lib/python3.*/site-packages/pydub || true
 
 if [[ "${1:-}" == "--latex" ]]; then
-  echo "› LaTeX (MacTeX, no GUI apps)"
-  brew install --cask mactex-no-gui
+  # BasicTeX (~140 MB) + only the packages Manim uses, instead of full MacTeX (~7 GB)
+  echo "› LaTeX (BasicTeX + Manim's packages; asks for your password)"
+  [ -x /Library/TeX/texbin/latex ] || brew install --cask basictex
+  export PATH="/Library/TeX/texbin:$PATH"
+  sudo tlmgr update --self
+  sudo tlmgr install standalone preview doublestroke relsize fundus-calligra wasysym physics \
+    dvisvgm rsfs wasy cm-super everysel babel-english
   echo "  open a new terminal afterwards so 'latex' is on PATH"
 fi
 

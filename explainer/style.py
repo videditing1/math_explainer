@@ -5,10 +5,16 @@ Rules (also in CLAUDE.md):
   * one colour = one concept, for the whole video
   * serif text (Georgia) for words; LaTeX (Computer Modern) for maths when installed
 """
+import os
 import shutil
 
 import numpy as np
 from manim import *
+
+# macOS TeX (BasicTeX/MacTeX) lives here; add it even if this shell started before the install
+_TEXBIN = "/Library/TeX/texbin"
+if os.path.isdir(_TEXBIN) and _TEXBIN not in os.environ.get("PATH", ""):
+    os.environ["PATH"] = _TEXBIN + os.pathsep + os.environ.get("PATH", "")
 
 # --- Palette: semantic names, not colours. Pick per video, keep consistent. -------
 BG = "#000000"

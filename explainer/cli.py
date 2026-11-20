@@ -85,7 +85,7 @@ def cmd_doctor(a):
         ["pkg-config", "--exists", "pangocairo"]).returncode == 0, "brew install cairo pango pkg-config")
     has_latex = shutil.which("latex") and shutil.which("dvisvgm")
     print(f"  {'✓' if has_latex else '~'} LaTeX" + ("" if has_latex else
-          "   → optional but needed for real maths typesetting: brew install --cask mactex-no-gui"))
+          "   → optional but needed for real maths typesetting: ./setup.sh --latex"))
     print("Keys (.env)")
     for k in ("AI33_API_KEY", "EPIDEMIC_SOUND_MCP_API_KEY"):
         check(k, get_key(k, required=False), f"add {k}=... to .env")
