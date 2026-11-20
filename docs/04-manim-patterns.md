@@ -21,7 +21,7 @@ Each row maps something the 3b1b videos *do* to the ManimCE tool that does it.
 | 3D surfaces (heat-equation sheets) | `ThreeDScene`, `Surface`, `self.move_camera(...)` | — |
 | Load an arbitrary drawing to decompose | `SVGMobject(path)` + `point_from_proportion(t)` | `PATH_SVG=... epicycles.py` |
 
-## Style rules baked into `scenes/style.py`
+## Style rules baked into `explainer/style.py`
 1. Pure black background, faint blue grid, thin strokes (2–3 px).
 2. ≤4 colours on screen at once, and each colour means one thing all video.
 3. Serif text for labels; LaTeX (Computer Modern) for maths.
@@ -32,7 +32,7 @@ Each row maps something the 3b1b videos *do* to the ManimCE tool that does it.
 ## Commands
 
 ```bash
-cd scenes
+cd scenes   # (after ./setup.sh and source .venv/bin/activate)
 ../.venv/bin/manim -pql winding_machine.py WindingMachine   # fast preview
 ../.venv/bin/manim -pqh winding_machine.py WindingMachine   # 1080p60 final
 ../.venv/bin/manim -s  -ql epicycles.py Epicycles           # save last frame (thumbnail)

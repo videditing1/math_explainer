@@ -1,0 +1,11 @@
+title = "{{title}}"
+scene = "Main"            # class name in scene.py
+
+[voice]
+name = "george"           # george | river | bella | roger | sarah, or any elevenlabs_<id> (`explainer voices`)
+speed = 1.0               # 0.5 – 1.5
+
+[music]
+query = "gentle curious piano documentary"   # Epidemic Sound search; steadiest preview wins
+# id = "4536383a-5800-4517-8c7e-388e2ba3be02" # pin a track instead of searching
+volume = 0.22             # bed level before ducking (0.15 quieter … 0.3 louder)

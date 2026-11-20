@@ -30,7 +30,7 @@ Checklist:
 
 ## 3. Storyboard (1 day)
 Sketch keyframes, or render rough `-ql` scenes with placeholder text. Fix the **colour
-assignments** now (`scenes/style.py`), because each concept keeps its colour for the whole video.
+assignments** now (`explainer/style.py`), because each concept keeps its colour for the whole video.
 
 ## 4. Build scenes (most of the time)
 - One `Scene` class per script beat, roughly 20–90 s each. Short scenes re-render fast.

@@ -8,21 +8,14 @@ gorgeous visual reason, which is that 23 people make **253 pairs**.
 | File | What |
 |---|---|
 | `script.txt` | narration (83 words ≈ 31 s) |
-| `voice.mp3`, `voice.timing.json`, `voice.srt` | AI33 voice "George" (ElevenLabs Multilingual v2) + per-word timings |
-| `birthday_paradox.py` | Manim scene; every beat is pinned to a narration word via `cue("word")` |
-| `mix.sh` | voice normalised to −16 LUFS + music bed auto-ducked under the voice |
-| `music.mp3` | *not committed* (licensed): Epidemic Sound "Starlit Fantasia" by Amber Glow |
+| `video.toml` | voice, music track id, levels |
+| `voice.mp3`, `voice.timing.json`, `voice.srt` | AI33 voice "George" + per-word timings |
+| `scene.py` | Manim scene (`VoiceScene`): every beat pinned to a narration word |
+| `music.json` | which track: Epidemic Sound "Starlit Fantasia" by Amber Glow (`music.mp3` is licensed, not committed) |
 
 ## Rebuild
 ```bash
-# from the repo root, with .env holding AI33_API_KEY and EPIDEMIC_SOUND_MCP_API_KEY
-.venv/bin/python tools/ai33_tts.py demos/birthday_paradox/script.txt demos/birthday_paradox/voice
-.venv/bin/python tools/epidemic.py call DownloadRecording \
-  '{"id":"4536383a-5800-4517-8c7e-388e2ba3be02","options":{"fileType":"MP3","stemType":"FULL"}}'
-#   → curl the returned assetUrl to demos/birthday_paradox/music.mp3
-cd demos/birthday_paradox
-../../.venv/bin/manim -qh --media_dir ../../media birthday_paradox.py BirthdayParadox
-./mix.sh
+explainer build birthday_paradox --hq    # re-downloads music.mp3 if missing
 ```
 
 ## Beat sheet

@@ -7,7 +7,7 @@
 | **Python 3.10+** | Manim is a Python library | `brew install python` or `uv` |
 | **Manim Community (ManimCE)** | The animation engine. Documented, stable, big plugin ecosystem. **Default choice for this repo.** | `uv venv --python 3.12 && uv pip install manim` |
 | **Cairo + Pango + pkg-config** | ManimCE's renderer and text layout | `brew install cairo pango pkg-config` |
-| **LaTeX (with dvisvgm)** | `MathTex`/`Tex` and axis numbers render through LaTeX. Without it you get the plain-text fallback in `scenes/style.py`, which is fine for drafts but not for finals. | `brew install --cask mactex-no-gui` (≈5 GB, full) or `brew install --cask basictex` then `sudo tlmgr install standalone preview doublestroke relsize fundus-calligra wasysym physics dvisvgm rsfs wasy cm-super everysel babel-english` |
+| **LaTeX (with dvisvgm)** | `MathTex`/`Tex` and axis numbers render through LaTeX. Without it you get the plain-text fallback in `explainer/style.py`, which is fine for drafts but not for finals. | `brew install --cask mactex-no-gui` (≈5 GB, full) or `brew install --cask basictex` then `sudo tlmgr install standalone preview doublestroke relsize fundus-calligra wasysym physics dvisvgm rsfs wasy cm-super everysel babel-english` |
 | **FFmpeg** | Encodes Manim's output and does your final muxing | `brew install ffmpeg` |
 
 > **ManimCE vs ManimGL (3b1b/manim).** Grant Sanderson's own version is
@@ -58,6 +58,6 @@
 
 ## Verified in this repo
 
-On macOS (Nov 2026) with Python 3.12 + Manim Community v0.22.1, the two example scenes render with
-no LaTeX installed, thanks to the fallback in `scenes/style.py`. Install LaTeX to get real
+On macOS (Nov 2026) with Python 3.12 + Manim Community v0.22.1 (installed by ./setup.sh), the example scenes render with
+no LaTeX installed, thanks to the fallback in `explainer/style.py`. Install LaTeX to get real
 Computer Modern maths.

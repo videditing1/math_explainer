@@ -10,7 +10,7 @@ Render:  manim -pql winding_machine.py WindingMachine      (fast preview)
 """
 import numpy as np
 
-from style import *
+from explainer import *
 
 T_MAX = 4.5                     # seconds of signal we look at
 SIGNAL_FREQS = (2, 3)           # beats per second; try (3,) first, then (2, 3)

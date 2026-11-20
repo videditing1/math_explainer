@@ -1,43 +1,60 @@
 # math_explainer
 
-Know-how and working code for making 3Blue1Brown-quality math explainer videos with
-[Manim](https://github.com/ManimCommunity/manim).
+A production environment for 3Blue1Brown-*style* math explainer videos: Manim animation,
+AI narration (AI33 / ElevenLabs voices), licensed music (Epidemic Sound), and every
+animation beat synced to the narration's word timings.
 
-Built from a teardown of two of the most successful math videos on YouTube:
+It's built on a teardown of two of the most successful math videos on YouTube:
 [But what is the Fourier Transform?](https://www.youtube.com/watch?v=spUNpyF58BY) (12.7 M views) and
 [But what is a Fourier series?](https://www.youtube.com/watch?v=r6sGWTCMz2k) (19 M views).
 
-## Read in this order
-1. [docs/01-why-these-videos-work.md](docs/01-why-these-videos-work.md): what makes them perform, enjoyable, and informative, plus a reusable structure template and target numbers
-2. [docs/02-toolchain.md](docs/02-toolchain.md): every tool you need (Manim, LaTeX, audio, editing), ManimCE vs ManimGL
-3. [docs/03-production-playbook.md](docs/03-production-playbook.md): checklist from idea to upload
-4. [docs/04-manim-patterns.md](docs/04-manim-patterns.md): which Manim technique implements which teaching move
-
-## Example scenes (original code, rebuilding the two signature visuals)
-| Scene | What it shows |
-|---|---|
-| [scenes/winding_machine.py](scenes/winding_machine.py) | Signal → wound around a circle → centre of mass → "almost Fourier transform", all linked to one frequency knob |
-| [scenes/epicycles.py](scenes/epicycles.py) | Complex Fourier series: rotating vectors tip to tail drawing a path (built-in heart, or any SVG) |
-| [scenes/style.py](scenes/style.py) | Shared palette and helpers, with a no-LaTeX fallback |
-
-## Demo: 30-second explainer
-[demos/birthday_paradox](demos/birthday_paradox): the birthday paradox, fully produced: AI voice, licensed music, every beat synced to the narration's word timings.
-
-## Tools
-| Script | What |
-|---|---|
-| [tools/ai33_tts.py](tools/ai33_tts.py) | Narration via AI33/OpenSpeaker (ElevenLabs voices) + per-word timing JSON for syncing |
-| [tools/epidemic.py](tools/epidemic.py) | Epidemic Sound MCP client: search and download licensed music |
-
-API keys live in `.env` (gitignored); see `.env.example`.
-
-## Quick start (macOS)
+## Setup (macOS, once)
 ```bash
-brew install cairo pango pkg-config ffmpeg uv
-uv venv --python 3.12 .venv && uv pip install --python .venv -r requirements.txt
-cd scenes && ../.venv/bin/manim -pql winding_machine.py WindingMachine
+./setup.sh              # ffmpeg, cairo/pango, Python 3.12 env, the `explainer` command
+./setup.sh --latex      # optional: LaTeX for real maths typesetting (~5 GB)
+# then paste your keys into .env (AI33_API_KEY, EPIDEMIC_SOUND_MCP_API_KEY)
+source .venv/bin/activate
+explainer doctor        # checks tools, keys, credits
 ```
-For proper maths typesetting, also install LaTeX (see the toolchain doc).
+
+## Make a video
+```bash
+explainer new fourier_short          # videos/fourier_short/: script.txt, scene.py, video.toml, beats.md
+#   1. outline beats.md   2. write script.txt   3. animate scene.py
+explainer render fourier_short       # fast 480p draft (timings estimated from the script)
+explainer build fourier_short --hq   # AI voice → music → 1080p60 render → mix
+# → videos/fourier_short/fourier_short_final.mp4 + thumbnail.png
+```
+Each step can also run alone: `voice`, `music`, `render`, `mix`. `explainer voices` lists narrators.
+
+## Syncing animation to narration
+```python
+from explainer import *
+
+class Main(VoiceScene):
+    def construct(self):
+        self.play_at("how", Write(title))                  # starts on the word "how"
+        self.play_until("pairs", Create(web), end=True)    # finishes as "pairs" ends
+        self.play_at("two hundred", FadeIn(counter))       # phrases work
+        self.hold_end()                                    # hold the payoff frame
+```
+Re-record the voice and every beat re-syncs automatically.
+
+## Layout
+| Path | What |
+|---|---|
+| [CLAUDE.md](CLAUDE.md) | house rules: pipeline, writing, visual style, secrets |
+| [explainer/](explainer/) | the toolkit: `style.py` (palette/type), `sync.py` (VoiceScene), `components.py`, `ai33.py`, `epidemic.py`, `cli.py` |
+| [explainer/template/](explainer/template/) | what `explainer new` copies |
+| [videos/birthday_paradox/](videos/birthday_paradox/) | finished 30 s demo built with all of the above |
+| [scenes/](scenes/) | standalone examples: Fourier winding machine, epicycles |
+| [docs/](docs/) | the teardown, toolchain, production playbook, Manim patterns |
+
+## Read
+1. [docs/01-why-these-videos-work.md](docs/01-why-these-videos-work.md): what makes them perform, enjoyable and informative
+2. [docs/02-toolchain.md](docs/02-toolchain.md): tools, ManimCE vs ManimGL
+3. [docs/03-production-playbook.md](docs/03-production-playbook.md): idea → upload checklist
+4. [docs/04-manim-patterns.md](docs/04-manim-patterns.md): teaching move → Manim code
 
 | Winding machine | Epicycles |
 |---|---|

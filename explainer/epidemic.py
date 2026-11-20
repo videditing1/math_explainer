@@ -1,29 +1,26 @@
 """Minimal client for the Epidemic Sound MCP server (music search + download).
 
-    python tools/epidemic.py tools                       # list tools
-    python tools/epidemic.py schema SearchRecordings      # show a tool's input schema
-    python tools/epidemic.py call SearchRecordings '{"query": "calm curious piano", "first": 10}'
+    python -m explainer.epidemic tools                       # list tools
+    python -m explainer.epidemic schema SearchRecordings      # show a tool's input schema
+    python -m explainer.epidemic call SearchRecordings '{"query": {"term": "calm piano"}, "first": 10}'
+Higher-level helpers: search_tracks(), download_track(); `explainer music` picks automatically.
 
 Needs EPIDEMIC_SOUND_MCP_API_KEY (an MCP Server key from Account → API keys) in env or .env.
 Requires an active Epidemic Sound subscription; downloads are licensed to that account.
 """
 import json
-import os
 import pathlib
+import re
 import sys
 import urllib.request
 
+from .env import get_key
+
 URL = "https://www.epidemicsound.com/a/mcp-service/mcp"
-ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 
 def _key():
-    if os.environ.get("EPIDEMIC_SOUND_MCP_API_KEY"):
-        return os.environ["EPIDEMIC_SOUND_MCP_API_KEY"]
-    for line in (ROOT / ".env").read_text().splitlines():
-        if line.startswith("EPIDEMIC_SOUND_MCP_API_KEY="):
-            return line.split("=", 1)[1].strip()
-    sys.exit("EPIDEMIC_SOUND_MCP_API_KEY not set")
+    return get_key("EPIDEMIC_SOUND_MCP_API_KEY")
 
 
 class Client:
@@ -70,6 +67,44 @@ class Client:
             return json.loads(text)
         except json.JSONDecodeError:
             return text
+
+
+def _walk(o):
+    if isinstance(o, dict):
+        if "title" in o and "audioFile" in o:
+            yield o
+        for v in o.values():
+            yield from _walk(v)
+    elif isinstance(o, list):
+        for v in o:
+            yield from _walk(v)
+
+
+def search_tracks(term: str, min_s: int = 40, max_s: int = 300, first: int = 12) -> list[dict]:
+    """[{id, title, artist, duration_s, bpm, preview}] for a music search."""
+    res = Client().call("SearchRecordings", {
+        "query": {"term": term},
+        "filter": {"duration": {"min": min_s * 1000, "max": max_s * 1000}}, "first": first})
+    out = []
+    for r in _walk(res):
+        credits = r.get("credits") or []
+        artist = next((c["artist"]["name"] for c in credits
+                       if isinstance(c, dict) and c.get("artist")), None)
+        out.append({"id": r["id"], "title": r["title"], "artist": artist, "bpm": r.get("bpm"),
+                    "duration_s": r["audioFile"]["durationInMilliseconds"] / 1000,
+                    "preview": r["audioFile"]["lqmp3Url"]})
+    return out
+
+
+def download_track(track_id: str, dest: pathlib.Path) -> pathlib.Path:
+    """Download the full-quality licensed MP3 (needs an active subscription)."""
+    res = Client().call("DownloadRecording", {"id": track_id,
+                                              "options": {"fileType": "MP3", "stemType": "FULL"}})
+    url = re.findall(r'https://[^"\\ ]+', json.dumps(res))[0]
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=180) as r:
+        dest.write_bytes(r.read())
+    return dest
 
 
 if __name__ == "__main__":

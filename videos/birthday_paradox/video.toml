@@ -1,0 +1,10 @@
+title = "The birthday paradox"
+scene = "Main"
+
+[voice]
+name = "george"
+speed = 1.0
+
+[music]
+id = "4536383a-5800-4517-8c7e-388e2ba3be02"   # "Starlit Fantasia" by Amber Glow
+volume = 0.22

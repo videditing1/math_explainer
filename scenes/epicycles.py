@@ -11,7 +11,7 @@ import os
 
 import numpy as np
 
-from style import *
+from explainer import *
 
 N_VECTORS = 51            # odd: frequencies -25..25
 CYCLE_SECONDS = 12        # how long one full trace takes on screen
