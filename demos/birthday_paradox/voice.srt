@@ -1,0 +1,46 @@
+1
+00:00:00,180 --> 00:00:03,156
+How many people do you need in a
+room before two of them probably
+
+2
+00:00:03,240 --> 00:00:04,376
+share a birthday?
+
+3
+00:00:04,460 --> 00:00:07,466
+Gut instinct says around
+one hundred eighty.
+
+4
+00:00:07,550 --> 00:00:10,106
+The real answer is just twenty three.
+
+5
+00:00:10,190 --> 00:00:13,626
+Here's the trick, you're not
+comparing birthdays with yours,
+
+6
+00:00:13,710 --> 00:00:15,786
+you're comparing every pair.
+
+7
+00:00:15,870 --> 00:00:18,976
+Twenty three people make two
+hundred fifty three pairs,
+
+8
+00:00:19,060 --> 00:00:21,288
+each one a small chance at a match.
+
+9
+00:00:21,372 --> 00:00:26,026
+Multiply the odds that every pair misses,
+and it drops below one half.
+
+10
+00:00:26,110 --> 00:00:30,772
+By seventy people, a match is a ninety
+nine point nine percent certainty.
+

@@ -20,6 +20,17 @@ Built from a teardown of two of the most successful math videos on YouTube:
 | [scenes/epicycles.py](scenes/epicycles.py) | Complex Fourier series: rotating vectors tip to tail drawing a path (built-in heart, or any SVG) |
 | [scenes/style.py](scenes/style.py) | Shared palette and helpers, with a no-LaTeX fallback |
 
+## Demo: 30-second explainer
+[demos/birthday_paradox](demos/birthday_paradox): the birthday paradox, fully produced: AI voice, licensed music, every beat synced to the narration's word timings.
+
+## Tools
+| Script | What |
+|---|---|
+| [tools/ai33_tts.py](tools/ai33_tts.py) | Narration via AI33/OpenSpeaker (ElevenLabs voices) + per-word timing JSON for syncing |
+| [tools/epidemic.py](tools/epidemic.py) | Epidemic Sound MCP client: search and download licensed music |
+
+API keys live in `.env` (gitignored); see `.env.example`.
+
 ## Quick start (macOS)
 ```bash
 brew install cairo pango pkg-config ffmpeg uv

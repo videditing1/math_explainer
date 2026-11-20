@@ -1,0 +1,1049 @@
+[
+  {
+    "language_code": "",
+    "language_probability": 1,
+    "text": "How many people do you need in a room before two of them probably share a birthday? Gut instinct says around one hundred eighty. The real answer is just twenty three. Here's the trick, you're not comparing birthdays with yours, you're comparing every pair. Twenty three people make two hundred fifty three pairs, each one a small chance at a match. Multiply the odds that every pair misses, and it drops below one half. By seventy people, a match is a ninety nine point nine percent certainty.",
+    "words": [
+      {
+        "text": "How",
+        "start": 0.18,
+        "end": 0.364,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 0.364,
+        "end": 0.38,
+        "type": "spacing"
+      },
+      {
+        "text": "many",
+        "start": 0.38,
+        "end": 0.611,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 0.611,
+        "end": 0.63,
+        "type": "spacing"
+      },
+      {
+        "text": "people",
+        "start": 0.63,
+        "end": 0.931,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 0.931,
+        "end": 0.95,
+        "type": "spacing"
+      },
+      {
+        "text": "do",
+        "start": 0.95,
+        "end": 1.077,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 1.077,
+        "end": 1.09,
+        "type": "spacing"
+      },
+      {
+        "text": "you",
+        "start": 1.09,
+        "end": 1.17,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 1.17,
+        "end": 1.17,
+        "type": "spacing"
+      },
+      {
+        "text": "need",
+        "start": 1.17,
+        "end": 1.377,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 1.377,
+        "end": 1.398,
+        "type": "spacing"
+      },
+      {
+        "text": "in",
+        "start": 1.398,
+        "end": 1.477,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 1.477,
+        "end": 1.48,
+        "type": "spacing"
+      },
+      {
+        "text": "a",
+        "start": 1.48,
+        "end": 1.575,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 1.575,
+        "end": 1.575,
+        "type": "spacing"
+      },
+      {
+        "text": "room",
+        "start": 1.575,
+        "end": 1.858,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 1.858,
+        "end": 1.88,
+        "type": "spacing"
+      },
+      {
+        "text": "before",
+        "start": 1.88,
+        "end": 2.248,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 2.248,
+        "end": 2.28,
+        "type": "spacing"
+      },
+      {
+        "text": "two",
+        "start": 2.28,
+        "end": 2.443,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 2.443,
+        "end": 2.46,
+        "type": "spacing"
+      },
+      {
+        "text": "of",
+        "start": 2.46,
+        "end": 2.535,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 2.535,
+        "end": 2.54,
+        "type": "spacing"
+      },
+      {
+        "text": "them",
+        "start": 2.54,
+        "end": 2.738,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 2.738,
+        "end": 2.76,
+        "type": "spacing"
+      },
+      {
+        "text": "probably",
+        "start": 2.76,
+        "end": 3.218,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 3.218,
+        "end": 3.24,
+        "type": "spacing"
+      },
+      {
+        "text": "share",
+        "start": 3.24,
+        "end": 3.451,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 3.451,
+        "end": 3.47,
+        "type": "spacing"
+      },
+      {
+        "text": "a",
+        "start": 3.47,
+        "end": 3.555,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 3.555,
+        "end": 3.56,
+        "type": "spacing"
+      },
+      {
+        "text": "birthday?",
+        "start": 3.56,
+        "end": 4.124,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 4.124,
+        "end": 4.46,
+        "type": "spacing"
+      },
+      {
+        "text": "Gut",
+        "start": 4.46,
+        "end": 4.736,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 4.736,
+        "end": 4.76,
+        "type": "spacing"
+      },
+      {
+        "text": "instinct",
+        "start": 4.76,
+        "end": 5.308,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 5.308,
+        "end": 5.393,
+        "type": "spacing"
+      },
+      {
+        "text": "says",
+        "start": 5.393,
+        "end": 5.661,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 5.661,
+        "end": 5.7,
+        "type": "spacing"
+      },
+      {
+        "text": "around",
+        "start": 5.7,
+        "end": 6.086,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 6.086,
+        "end": 6.12,
+        "type": "spacing"
+      },
+      {
+        "text": "one",
+        "start": 6.12,
+        "end": 6.32,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 6.32,
+        "end": 6.352,
+        "type": "spacing"
+      },
+      {
+        "text": "hundred",
+        "start": 6.352,
+        "end": 6.646,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 6.646,
+        "end": 6.68,
+        "type": "spacing"
+      },
+      {
+        "text": "eighty.",
+        "start": 6.68,
+        "end": 7.156,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 7.156,
+        "end": 7.55,
+        "type": "spacing"
+      },
+      {
+        "text": "The",
+        "start": 7.55,
+        "end": 7.7,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 7.7,
+        "end": 7.71,
+        "type": "spacing"
+      },
+      {
+        "text": "real",
+        "start": 7.71,
+        "end": 7.988,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 7.988,
+        "end": 8.03,
+        "type": "spacing"
+      },
+      {
+        "text": "answer",
+        "start": 8.03,
+        "end": 8.496,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 8.496,
+        "end": 8.59,
+        "type": "spacing"
+      },
+      {
+        "text": "is",
+        "start": 8.59,
+        "end": 8.798,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 8.798,
+        "end": 8.83,
+        "type": "spacing"
+      },
+      {
+        "text": "just",
+        "start": 8.83,
+        "end": 9.056,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 9.056,
+        "end": 9.08,
+        "type": "spacing"
+      },
+      {
+        "text": "twenty",
+        "start": 9.08,
+        "end": 9.369,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 9.369,
+        "end": 9.39,
+        "type": "spacing"
+      },
+      {
+        "text": "three.",
+        "start": 9.39,
+        "end": 9.883,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 9.883,
+        "end": 10.19,
+        "type": "spacing"
+      },
+      {
+        "text": "Here's",
+        "start": 10.19,
+        "end": 10.516,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 10.516,
+        "end": 10.52,
+        "type": "spacing"
+      },
+      {
+        "text": "the",
+        "start": 10.52,
+        "end": 10.622,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 10.622,
+        "end": 10.622,
+        "type": "spacing"
+      },
+      {
+        "text": "trick,",
+        "start": 10.622,
+        "end": 11.032,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 11.032,
+        "end": 11.27,
+        "type": "spacing"
+      },
+      {
+        "text": "you're",
+        "start": 11.27,
+        "end": 11.487,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 11.487,
+        "end": 11.487,
+        "type": "spacing"
+      },
+      {
+        "text": "not",
+        "start": 11.487,
+        "end": 11.673,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 11.673,
+        "end": 11.705,
+        "type": "spacing"
+      },
+      {
+        "text": "comparing",
+        "start": 11.705,
+        "end": 12.152,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 12.152,
+        "end": 12.184,
+        "type": "spacing"
+      },
+      {
+        "text": "birthdays",
+        "start": 12.184,
+        "end": 12.642,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 12.642,
+        "end": 12.664,
+        "type": "spacing"
+      },
+      {
+        "text": "with",
+        "start": 12.664,
+        "end": 12.881,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 12.881,
+        "end": 12.903,
+        "type": "spacing"
+      },
+      {
+        "text": "yours,",
+        "start": 12.903,
+        "end": 13.394,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 13.394,
+        "end": 13.71,
+        "type": "spacing"
+      },
+      {
+        "text": "you're",
+        "start": 13.71,
+        "end": 13.947,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 13.947,
+        "end": 13.95,
+        "type": "spacing"
+      },
+      {
+        "text": "comparing",
+        "start": 13.95,
+        "end": 14.449,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 14.449,
+        "end": 14.501,
+        "type": "spacing"
+      },
+      {
+        "text": "every",
+        "start": 14.501,
+        "end": 14.848,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 14.848,
+        "end": 14.901,
+        "type": "spacing"
+      },
+      {
+        "text": "pair.",
+        "start": 14.901,
+        "end": 15.487,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 15.487,
+        "end": 15.87,
+        "type": "spacing"
+      },
+      {
+        "text": "Twenty",
+        "start": 15.87,
+        "end": 16.159,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 16.159,
+        "end": 16.18,
+        "type": "spacing"
+      },
+      {
+        "text": "three",
+        "start": 16.18,
+        "end": 16.458,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 16.458,
+        "end": 16.5,
+        "type": "spacing"
+      },
+      {
+        "text": "people",
+        "start": 16.5,
+        "end": 16.868,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 16.868,
+        "end": 16.9,
+        "type": "spacing"
+      },
+      {
+        "text": "make",
+        "start": 16.9,
+        "end": 17.119,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 17.119,
+        "end": 17.14,
+        "type": "spacing"
+      },
+      {
+        "text": "two",
+        "start": 17.14,
+        "end": 17.289,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 17.289,
+        "end": 17.3,
+        "type": "spacing"
+      },
+      {
+        "text": "hundred",
+        "start": 17.3,
+        "end": 17.588,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 17.588,
+        "end": 17.62,
+        "type": "spacing"
+      },
+      {
+        "text": "fifty",
+        "start": 17.62,
+        "end": 17.936,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 17.936,
+        "end": 17.95,
+        "type": "spacing"
+      },
+      {
+        "text": "three",
+        "start": 17.95,
+        "end": 18.217,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 18.217,
+        "end": 18.26,
+        "type": "spacing"
+      },
+      {
+        "text": "pairs,",
+        "start": 18.26,
+        "end": 18.797,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 18.797,
+        "end": 19.06,
+        "type": "spacing"
+      },
+      {
+        "text": "each",
+        "start": 19.06,
+        "end": 19.278,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 19.278,
+        "end": 19.3,
+        "type": "spacing"
+      },
+      {
+        "text": "one",
+        "start": 19.3,
+        "end": 19.502,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 19.502,
+        "end": 19.535,
+        "type": "spacing"
+      },
+      {
+        "text": "a",
+        "start": 19.535,
+        "end": 19.625,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 19.625,
+        "end": 19.625,
+        "type": "spacing"
+      },
+      {
+        "text": "small",
+        "start": 19.625,
+        "end": 19.982,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 19.982,
+        "end": 20.014,
+        "type": "spacing"
+      },
+      {
+        "text": "chance",
+        "start": 20.014,
+        "end": 20.232,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 20.232,
+        "end": 20.254,
+        "type": "spacing"
+      },
+      {
+        "text": "at",
+        "start": 20.254,
+        "end": 20.37,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 20.37,
+        "end": 20.37,
+        "type": "spacing"
+      },
+      {
+        "text": "a",
+        "start": 20.37,
+        "end": 20.482,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 20.482,
+        "end": 20.493,
+        "type": "spacing"
+      },
+      {
+        "text": "match.",
+        "start": 20.493,
+        "end": 21.066,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 21.066,
+        "end": 21.372,
+        "type": "spacing"
+      },
+      {
+        "text": "Multiply",
+        "start": 21.372,
+        "end": 21.906,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 21.906,
+        "end": 21.94,
+        "type": "spacing"
+      },
+      {
+        "text": "the",
+        "start": 21.94,
+        "end": 22.087,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 22.087,
+        "end": 22.1,
+        "type": "spacing"
+      },
+      {
+        "text": "odds",
+        "start": 22.1,
+        "end": 22.39,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 22.39,
+        "end": 22.411,
+        "type": "spacing"
+      },
+      {
+        "text": "that",
+        "start": 22.411,
+        "end": 22.63,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 22.63,
+        "end": 22.651,
+        "type": "spacing"
+      },
+      {
+        "text": "every",
+        "start": 22.651,
+        "end": 22.939,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 22.939,
+        "end": 22.97,
+        "type": "spacing"
+      },
+      {
+        "text": "pair",
+        "start": 22.97,
+        "end": 23.248,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 23.248,
+        "end": 23.29,
+        "type": "spacing"
+      },
+      {
+        "text": "misses,",
+        "start": 23.29,
+        "end": 23.776,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 23.776,
+        "end": 24.01,
+        "type": "spacing"
+      },
+      {
+        "text": "and",
+        "start": 24.01,
+        "end": 24.167,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 24.167,
+        "end": 24.18,
+        "type": "spacing"
+      },
+      {
+        "text": "it",
+        "start": 24.18,
+        "end": 24.319,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 24.319,
+        "end": 24.33,
+        "type": "spacing"
+      },
+      {
+        "text": "drops",
+        "start": 24.33,
+        "end": 24.629,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 24.629,
+        "end": 24.65,
+        "type": "spacing"
+      },
+      {
+        "text": "below",
+        "start": 24.65,
+        "end": 24.997,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 24.997,
+        "end": 25.05,
+        "type": "spacing"
+      },
+      {
+        "text": "one",
+        "start": 25.05,
+        "end": 25.258,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 25.258,
+        "end": 25.29,
+        "type": "spacing"
+      },
+      {
+        "text": "half.",
+        "start": 25.29,
+        "end": 25.822,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 25.822,
+        "end": 26.11,
+        "type": "spacing"
+      },
+      {
+        "text": "By",
+        "start": 26.11,
+        "end": 26.378,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 26.378,
+        "end": 26.41,
+        "type": "spacing"
+      },
+      {
+        "text": "seventy",
+        "start": 26.41,
+        "end": 26.757,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 26.757,
+        "end": 26.81,
+        "type": "spacing"
+      },
+      {
+        "text": "people,",
+        "start": 26.81,
+        "end": 27.271,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 27.271,
+        "end": 27.52,
+        "type": "spacing"
+      },
+      {
+        "text": "a",
+        "start": 27.52,
+        "end": 27.673,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 27.673,
+        "end": 27.684,
+        "type": "spacing"
+      },
+      {
+        "text": "match",
+        "start": 27.684,
+        "end": 27.906,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 27.906,
+        "end": 27.93,
+        "type": "spacing"
+      },
+      {
+        "text": "is",
+        "start": 27.93,
+        "end": 28.04,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 28.04,
+        "end": 28.04,
+        "type": "spacing"
+      },
+      {
+        "text": "a",
+        "start": 28.04,
+        "end": 28.164,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 28.164,
+        "end": 28.18,
+        "type": "spacing"
+      },
+      {
+        "text": "ninety",
+        "start": 28.18,
+        "end": 28.499,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 28.499,
+        "end": 28.52,
+        "type": "spacing"
+      },
+      {
+        "text": "nine",
+        "start": 28.52,
+        "end": 28.786,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 28.786,
+        "end": 28.81,
+        "type": "spacing"
+      },
+      {
+        "text": "point",
+        "start": 28.81,
+        "end": 29.101,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 29.101,
+        "end": 29.122,
+        "type": "spacing"
+      },
+      {
+        "text": "nine",
+        "start": 29.122,
+        "end": 29.42,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 29.42,
+        "end": 29.442,
+        "type": "spacing"
+      },
+      {
+        "text": "percent",
+        "start": 29.442,
+        "end": 29.789,
+        "type": "word"
+      },
+      {
+        "text": " ",
+        "start": 29.789,
+        "end": 29.841,
+        "type": "spacing"
+      },
+      {
+        "text": "certainty.",
+        "start": 29.841,
+        "end": 30.582,
+        "type": "word"
+      }
+    ],
+    "transcription_id": "e6f2b0e3b83aa5192fb2",
+    "audio_duration_secs": 30.772245
+  }
+]

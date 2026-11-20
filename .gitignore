@@ -6,3 +6,6 @@ __pycache__/
 .env
 .env.*
 !.env.example
+
+# licensed stock audio: use in videos, do not redistribute
+demos/**/music.mp3
